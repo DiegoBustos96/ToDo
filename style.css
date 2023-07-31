@@ -1,0 +1,110 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body{
+    height:100vh;
+    background-color: aliceblue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    width: 49%;
+    min-width: 450px;
+    min-height: 180px;
+    background: whitesmoke;
+    border-radius: 16px;
+}
+
+#nuevaTarea{
+    position: relative;
+    padding: 30px 20px;
+}
+
+#nuevaTarea input{
+    width: 75%;
+    height: 45px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    font-weight: 500;
+    position: relative;
+    border-radius: 12px 0 0 12px;
+}
+
+#nuevaTarea input:focus{
+    outline: none;
+    border-color: azure;
+
+}
+
+#nuevaTarea button{
+    position: relative;
+    /* float: right; */
+    width: 20%;
+    height: 45px;
+    border-radius:  0  12px 12px 0 ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #1a759f;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#listaTareas{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 18px;
+    width: 100%;
+    position: relative;
+}
+
+.tarea{
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+
+.tarea span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.borrar{
+    background-color: #1a759f;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.tarea .cursor-checkbox{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: #ffffff;
+    border: 1px solid #1a759f;
+    margin-right: 0.1em;
+    border-radius: 50%;
+}
+
+.tarea-completada .nombreTarea{
+    text-decoration: line-through;
+    color: greenyellow;
+}
